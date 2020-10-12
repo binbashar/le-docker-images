@@ -26,14 +26,6 @@
 ![GitHub stars](https://img.shields.io/github/stars/binbashar/le-docker-images.svg?style=social)
 ![GitHub watchers](https://img.shields.io/github/watchers/binbashar/le-docker-images.svg?style=social)
 
-|Docker Image| Build Status|
-|---|---|
-|`git-release`|[![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/binbash/git-release.svg)](https://cloud.docker.com/u/binbash/repository/docker/binbash/git-release/general) [![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/binbash/git-release.svg)](https://cloud.docker.com/u/binbash/repository/docker/binbash/git-release/builds)|
-| `terraform-awscli` |[![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/binbash/terraform-awscli.svg)](https://cloud.docker.com/u/binbash/repository/docker/binbash/terraform-awscli/general) [![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/binbash/terraform-awscli.svg)](https://cloud.docker.com/u/binbash/repository/docker/binbash/terraform-awscli/builds)|
-| `terraform-awscli-slim` |[![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/binbash/terraform-awscli-slim.svg)](https://cloud.docker.com/u/binbash/repository/docker/binbash/terraform-awscli-slim/general) [![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/binbash/terraform-awscli-slim.svg)](https://cloud.docker.com/u/binbash/repository/docker/binbash/terraform-awscli-slim/builds)|
-| `terraform-awscli-terratest-slim` |[![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/binbash/terraform-awscli-terratest-slim.svg)](https://cloud.docker.com/u/binbash/repository/docker/binbash/terraform-awscli-terratest-slim/general) [![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/binbash/terraform-awscli-terratest-slim.svg)](https://cloud.docker.com/u/binbash/repository/docker/binbash/terraform-awscli-terratest-slim/builds)|
-| `terraform-resources` |[![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/binbash/terraform-resources.svg)](https://cloud.docker.com/u/binbash/repository/docker/binbash/terraform-resources/general) [![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/binbash/terraform-resources.svg)](https://cloud.docker.com/u/binbash/repository/docker/binbash/terraform-resources/builds)|
-
 # Release Management
 ### CircleCi PR auto-release job
 <div align="left">

@@ -4,13 +4,7 @@ MAKEFILE_PATH := ./Makefile
 MAKEFILES_DIR := ./@bin/makefiles
 
 define DOCKER_IMG_LIST
-"aws-cli" \
 "git-release" \
-"jenkins" \
-"k8s-kubectl" \
-"k8s-kubectx" \
-"mysql-client" \
-"sec-scoutsuite" \
 "terraform-awscli" \
 "terraform-awscli-slim" \
 "terraform-awscli-terratest-slim" \
@@ -18,11 +12,7 @@ define DOCKER_IMG_LIST
 endef
 
 define DOCKER_IMG_TEST_LIST
-"aws-cli" \
 "git-release" \
-"jenkins" \
-"mysql-client" \
-"sec-scoutsuite" \
 "terraform-awscli" \
 "terraform-awscli-slim" \
 "terraform-awscli-terratest-slim" \
