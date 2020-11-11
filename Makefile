@@ -2,8 +2,11 @@
 SHELL         := /bin/bash
 MAKEFILE_PATH := ./Makefile
 MAKEFILES_DIR := ./@bin/makefiles
+MAKEFILES_VER := v0.0.67
 
 define DOCKER_IMG_LIST
+"ansible" \
+"ansible-dev" \
 "git-release" \
 "terraform-awscli" \
 "terraform-awscli-slim" \
@@ -21,7 +24,8 @@ help:
 init-makefiles: ## initialize makefiles
 	rm -rf ${MAKEFILES_DIR}
 	mkdir -p ${MAKEFILES_DIR}
-	git clone https://github.com/binbashar/le-dev-makefiles.git ${MAKEFILES_DIR}
+	git clone https://github.com/binbashar/le-dev-makefiles.git ${MAKEFILES_DIR} -q
+	cd ${MAKEFILES_DIR} && git checkout ${MAKEFILES_VER} -q
 
 -include ${MAKEFILES_DIR}/circleci/circleci.mk
 -include ${MAKEFILES_DIR}/release-mgmt/release.mk
