@@ -7,6 +7,14 @@ All notable changes to this project will be documented in this file.
 
 
 
+<a name="v0.0.4"></a>
+## [v0.0.4] - 2020-11-11
+
+- BBL-242 | only keeping init-makefiles at the root-context to allow a cleaner approach
+- BBL-242 | ansible images dockerfiles
+- BBL-242 | Makefile updated to use versioned approach + adding new docker images for ansible
+
+
 <a name="v0.0.3"></a>
 ## [v0.0.3] - 2020-10-12
 
@@ -28,6 +36,7 @@ All notable changes to this project will be documented in this file.
 - BBL-313 | le-docker-images initial commit
 
 
-[Unreleased]: https://github.com/binbashar/public-docker-images/compare/v0.0.3...HEAD
+[Unreleased]: https://github.com/binbashar/public-docker-images/compare/v0.0.4...HEAD
+[v0.0.4]: https://github.com/binbashar/public-docker-images/compare/v0.0.3...v0.0.4
 [v0.0.3]: https://github.com/binbashar/public-docker-images/compare/v0.0.2...v0.0.3
 [v0.0.2]: https://github.com/binbashar/public-docker-images/compare/v0.0.1...v0.0.2
