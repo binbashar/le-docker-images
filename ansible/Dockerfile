@@ -5,7 +5,7 @@ ARG DOCKER_TAG
 ARG ANSIBLE_VERSION=${DOCKER_TAG}
 
 ENV PY_PIP_VER=20.2.4
-ENV PY_PIP_PKGS="ansible==${ANSIBLE_VERSION}"
+ENV PY_PIP_PKGS="ansible==${ANSIBLE_VERSION} jmespath==0.10.0"
 
 #
 # Installing dependencies
