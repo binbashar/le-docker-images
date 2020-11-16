@@ -7,6 +7,13 @@ All notable changes to this project will be documented in this file.
 
 
 
+<a name="v0.0.7"></a>
+## [v0.0.7] - 2020-11-15
+
+- Merge branch 'master' of github.com:binbashar/le-docker-images
+- BBL-440 | upgrading make init-makefiles to latest ver
+
+
 <a name="v0.0.6"></a>
 ## [v0.0.6] - 2020-11-14
 
@@ -48,7 +55,8 @@ All notable changes to this project will be documented in this file.
 - BBL-313 | le-docker-images initial commit
 
 
-[Unreleased]: https://github.com/binbashar/public-docker-images/compare/v0.0.6...HEAD
+[Unreleased]: https://github.com/binbashar/public-docker-images/compare/v0.0.7...HEAD
+[v0.0.7]: https://github.com/binbashar/public-docker-images/compare/v0.0.6...v0.0.7
 [v0.0.6]: https://github.com/binbashar/public-docker-images/compare/v0.0.5...v0.0.6
 [v0.0.5]: https://github.com/binbashar/public-docker-images/compare/v0.0.4...v0.0.5
 [v0.0.4]: https://github.com/binbashar/public-docker-images/compare/v0.0.3...v0.0.4
