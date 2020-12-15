@@ -7,6 +7,12 @@ All notable changes to this project will be documented in this file.
 
 
 
+<a name="v0.0.9"></a>
+## [v0.0.9] - 2020-12-15
+
+- BBL-263 | updating terraform images to use the latest stable version
+
+
 <a name="v0.0.8"></a>
 ## [v0.0.8] - 2020-11-16
 
@@ -62,7 +68,8 @@ All notable changes to this project will be documented in this file.
 - BBL-313 | le-docker-images initial commit
 
 
-[Unreleased]: https://github.com/binbashar/public-docker-images/compare/v0.0.8...HEAD
+[Unreleased]: https://github.com/binbashar/public-docker-images/compare/v0.0.9...HEAD
+[v0.0.9]: https://github.com/binbashar/public-docker-images/compare/v0.0.8...v0.0.9
 [v0.0.8]: https://github.com/binbashar/public-docker-images/compare/v0.0.7...v0.0.8
 [v0.0.7]: https://github.com/binbashar/public-docker-images/compare/v0.0.6...v0.0.7
 [v0.0.6]: https://github.com/binbashar/public-docker-images/compare/v0.0.5...v0.0.6
