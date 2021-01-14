@@ -8,7 +8,6 @@ LABEL vendor="Binbash Leverage (info@binbash.com.ar)"
 
 # Install aws-iam-authenticator
 WORKDIR /opt
-ENV AWS_IAM_AUTHENTICATOR_VERSION=${AWS_IAM_AUTHENTICATOR_VERSION}
 RUN wget -O aws-iam-authenticator https://github.com/kubernetes-sigs/aws-iam-authenticator/releases/download/v0.5.2/aws-iam-authenticator_0.5.2_linux_amd64
 RUN chmod +x aws-iam-authenticator
 
