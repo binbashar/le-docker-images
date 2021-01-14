@@ -29,6 +29,8 @@ LABEL vendor="Binbash Leverage (info@binbash.com.ar)"
 COPY --from=helmsman /usr/local/bin/kubectl /usr/local/bin/kubectl
 COPY --from=helmsman /bin/helmsman /usr/local/bin/helmsman
 COPY --from=helmsman /usr/local/bin/helm /usr/local/bin/helm
+COPY --from=helmsman /root/.cache/helm/plugins/ /root/.cache/helm/plugins/
+COPY --from=helmsman /root/.local/share/helm/plugins/ /root/.local/share/helm/plugins/
 
 # Copy aws-iam-authenticator
 COPY --from=aws-iam-authenticator /opt/aws-iam-authenticator /usr/local/bin/aws-iam-authenticator
