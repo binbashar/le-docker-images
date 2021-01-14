@@ -26,6 +26,7 @@ FROM alpine:3.12.3 AS main
 LABEL vendor="Binbash Leverage (info@binbash.com.ar)"
 
 # Copy helmsman and helm from praqma
+COPY --from=helmsman /usr/local/bin/kubectl /usr/local/bin/kubectl
 COPY --from=helmsman /bin/helmsman /usr/local/bin/helmsman
 COPY --from=helmsman /usr/local/bin/helm /usr/local/bin/helm
 
