@@ -11,6 +11,10 @@ WORKDIR /opt
 RUN wget -O aws-iam-authenticator https://github.com/kubernetes-sigs/aws-iam-authenticator/releases/download/v0.5.2/aws-iam-authenticator_0.5.2_linux_amd64
 RUN chmod +x aws-iam-authenticator
 
+# Install yq
+RUN wget -O yq https://github.com/mikefarah/yq/releases/download/v4.4.0/yq_linux_amd64
+RUN chmod +x yq
+
 
 #
 # Build image for helmsman and helm
@@ -31,7 +35,8 @@ COPY --from=helmsman /usr/local/bin/helm /usr/local/bin/helm
 COPY --from=helmsman /root/.cache/helm/plugins/ /root/.cache/helm/plugins/
 COPY --from=helmsman /root/.local/share/helm/plugins/ /root/.local/share/helm/plugins/
 
-# Copy aws-iam-authenticator
+# Copy aws-iam-authenticator and yq
 COPY --from=aws-iam-authenticator /opt/aws-iam-authenticator /usr/local/bin/aws-iam-authenticator
+COPY --from=aws-iam-authenticator /opt/yq /usr/local/bin/yq
 
 ENTRYPOINT ["helmsman"]
