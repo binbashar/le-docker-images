@@ -7,6 +7,21 @@ All notable changes to this project will be documented in this file.
 
 
 
+<a name="v0.0.10"></a>
+## [v0.0.10] - 2021-01-20
+
+- BBL-424 | minor sintaxt update
+- Merge branch 'helmsman' into feature/BBL-424-infracost
+- BBL-424 | adding terraform-infracost-slim image for terraform cost plan estimations
+- BBL-424 | upgrading terraform images to its latest version + awscli ver upgrade
+- BBL-424 | legacy leverage terraform images updated to latest stable tf 0.13.6
+- Add yq to parse YAML
+- Remove unnecessary line
+- Add missing helm plugins
+- Add also kubectl
+- Add Helmsman/Helm docker image with aws-iam-authenticator
+
+
 <a name="v0.0.9"></a>
 ## [v0.0.9] - 2020-12-15
 
@@ -68,7 +83,8 @@ All notable changes to this project will be documented in this file.
 - BBL-313 | le-docker-images initial commit
 
 
-[Unreleased]: https://github.com/binbashar/public-docker-images/compare/v0.0.9...HEAD
+[Unreleased]: https://github.com/binbashar/public-docker-images/compare/v0.0.10...HEAD
+[v0.0.10]: https://github.com/binbashar/public-docker-images/compare/v0.0.9...v0.0.10
 [v0.0.9]: https://github.com/binbashar/public-docker-images/compare/v0.0.8...v0.0.9
 [v0.0.8]: https://github.com/binbashar/public-docker-images/compare/v0.0.7...v0.0.8
 [v0.0.7]: https://github.com/binbashar/public-docker-images/compare/v0.0.6...v0.0.7
