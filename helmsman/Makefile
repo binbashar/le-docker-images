@@ -6,7 +6,7 @@ DOCKER_ORG 		:= binbash
 DOCKER_IMAGE 	:= helmsman
 DOCKER_TAG 		:= v3.4.3-helm-v3.2.1
 
-BASE_HELMSMAN_IMAGE				:= praqma/helmsman:v3.4.3-helm-v3.2.1
+BASE_HELMSMAN_IMAGE	:= praqma/helmsman:v3.4.3-helm-v3.2.1
 
 
 help:
