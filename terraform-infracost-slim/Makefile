@@ -4,19 +4,19 @@ MAKEFILES_DIR    := ../@bin/makefiles
 
 DOCKER_TAG       := 0.14.4
 DOCKER_REPO_NAME := binbash
-DOCKER_IMG_NAME  := terraform-awscli-slim
+DOCKER_IMG_NAME  := terraform-infracost-slim
 
-LOCAL_OS_AWS_CONF_DIR := ~/.aws/bb
-AWS_REGION            := us-east-1
-AWS_IAM_PROFILE       := bb-apps-devstg-devops
-AWS_DOCKER_ENTRYPOINT := aws
+LOCAL_OS_AWS_CONF_DIR 			:= ~/.aws/bb
+AWS_REGION            			:= us-east-1
+AWS_IAM_PROFILE       		 	:= bb-apps-devstg-devops
+INFRACOST_DOCKER_ENTRYPOINT := infracost
 
-define AWSCLI_CMD_PREFIX
+define INFRACOST_CMD_PREFIX
 docker run -it --rm \
 --name ${DOCKER_IMG_NAME} \
 -v ${LOCAL_OS_AWS_CONF_DIR}:/root/.aws \
 -e "AWS_DEFAULT_REGION=us-east-1" \
---entrypoint=${AWS_DOCKER_ENTRYPOINT} \
+--entrypoint=${INFRACOST_DOCKER_ENTRYPOINT} \
 ${DOCKER_REPO_NAME}/${DOCKER_IMG_NAME}:${DOCKER_TAG}
 endef
 
@@ -30,20 +30,16 @@ help:
 # docker run tests
 #
 
-# awscli
+# infracost
 #
-run-awscli-version: ## docker run awscli commands
-	${AWSCLI_CMD_PREFIX} --version
+run-infracost-version: ## docker run infracost --version
+	${INFRACOST_CMD_PREFIX} --version
 
 # terraform & python
 #
-run-python-version: ## docker run python --version
-	docker run -it --rm --entrypoint=python3 \
-	${DOCKER_REPO_NAME}/${DOCKER_IMG_NAME}:${DOCKER_TAG} --version
-
 run-terraform-version: ## docker run terraform --version
 	docker run -it --rm \
 	${DOCKER_REPO_NAME}/${DOCKER_IMG_NAME}:${DOCKER_TAG} --version
 
-test: run-awscli-version run-python-version run-terraform-version ## ci docker image tests
+test: run-terraform-version run-infracost-version  ## ci docker image tests
 

@@ -5,7 +5,7 @@ FROM hashicorp/terraform:${TERRAFORM_VERSION}
 
 LABEL vendor="Binbash Leverage (info@binbash.com.ar)"
 
-ARG AWSCLI_VERSION=1.18.216
+ARG INFRACOST_VERSION="v0.7.13"
 
 # Install python3 and other useful dependencies
 RUN apk update
@@ -23,10 +23,8 @@ RUN set -ex && \
         python3
 RUN rm /var/cache/apk/*
 
-# Install latest pip3 and AWS CLI
-RUN python3 -m ensurepip && \
-        python3 -m pip install --upgrade pip && \
-        rm -r /usr/lib/python*/ensurepip && \
-        pip3 install awscli==${AWSCLI_VERSION}
+# Install specific infracos.io linux version
+RUN curl -s -L https://github.com/infracost/infracost/releases/download/${INFRACOST_VERSION}/infracost-linux-amd64.tar.gz | tar xz -C /tmp && \
+mv /tmp/infracost-linux-amd64 /usr/local/bin/infracost
 
 ENTRYPOINT ["terraform"]
