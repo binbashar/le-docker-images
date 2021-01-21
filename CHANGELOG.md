@@ -7,6 +7,12 @@ All notable changes to this project will be documented in this file.
 
 
 
+<a name="v0.0.11"></a>
+## [v0.0.11] - 2021-01-21
+
+- updating terraform-infracost to its latest version
+
+
 <a name="v0.0.10"></a>
 ## [v0.0.10] - 2021-01-20
 
@@ -83,7 +89,8 @@ All notable changes to this project will be documented in this file.
 - BBL-313 | le-docker-images initial commit
 
 
-[Unreleased]: https://github.com/binbashar/public-docker-images/compare/v0.0.10...HEAD
+[Unreleased]: https://github.com/binbashar/public-docker-images/compare/v0.0.11...HEAD
+[v0.0.11]: https://github.com/binbashar/public-docker-images/compare/v0.0.10...v0.0.11
 [v0.0.10]: https://github.com/binbashar/public-docker-images/compare/v0.0.9...v0.0.10
 [v0.0.9]: https://github.com/binbashar/public-docker-images/compare/v0.0.8...v0.0.9
 [v0.0.8]: https://github.com/binbashar/public-docker-images/compare/v0.0.7...v0.0.8
