@@ -11,7 +11,8 @@ define DOCKER_IMG_LIST
 "terraform-awscli" \
 "terraform-awscli-slim" \
 "terraform-awscli-terratest-slim" \
-"terraform-resources"
+"terraform-resources" \
+"helmsman"
 endef
 
 help:
