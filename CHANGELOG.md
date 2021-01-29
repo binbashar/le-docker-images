@@ -7,6 +7,12 @@ All notable changes to this project will be documented in this file.
 
 
 
+<a name="v0.0.14"></a>
+## [v0.0.14] - 2021-01-29
+
+- Add eyaml to helmsman image ([#9](https://github.com/binbashar/public-docker-images/issues/9))
+
+
 <a name="v0.0.13"></a>
 ## [v0.0.13] - 2021-01-29
 
@@ -101,7 +107,8 @@ All notable changes to this project will be documented in this file.
 - BBL-313 | le-docker-images initial commit
 
 
-[Unreleased]: https://github.com/binbashar/public-docker-images/compare/v0.0.13...HEAD
+[Unreleased]: https://github.com/binbashar/public-docker-images/compare/v0.0.14...HEAD
+[v0.0.14]: https://github.com/binbashar/public-docker-images/compare/v0.0.13...v0.0.14
 [v0.0.13]: https://github.com/binbashar/public-docker-images/compare/v0.0.12...v0.0.13
 [v0.0.12]: https://github.com/binbashar/public-docker-images/compare/v0.0.11...v0.0.12
 [v0.0.11]: https://github.com/binbashar/public-docker-images/compare/v0.0.10...v0.0.11
