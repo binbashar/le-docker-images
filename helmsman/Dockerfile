@@ -28,6 +28,10 @@ FROM ${BASE_HELMSMAN_IMAGE} AS helmsman
 FROM alpine:3.12.3 AS main
 LABEL vendor="Binbash Leverage (info@binbash.com.ar)"
 
+# Install eyaml
+RUN apk add --update --no-cache ruby && \
+    gem install hiera-eyaml
+
 # Copy helmsman and helm from praqma
 COPY --from=helmsman /usr/local/bin/kubectl /usr/local/bin/kubectl
 COPY --from=helmsman /bin/helmsman /usr/local/bin/helmsman
