@@ -7,6 +7,13 @@ All notable changes to this project will be documented in this file.
 
 
 
+<a name="v0.0.15"></a>
+## [v0.0.15] - 2021-02-26
+
+- Merge branch 'master' of github.com:binbashar/le-docker-images
+- BBL-192 | updating infracost ver
+
+
 <a name="v0.0.14"></a>
 ## [v0.0.14] - 2021-01-29
 
@@ -107,7 +114,8 @@ All notable changes to this project will be documented in this file.
 - BBL-313 | le-docker-images initial commit
 
 
-[Unreleased]: https://github.com/binbashar/public-docker-images/compare/v0.0.14...HEAD
+[Unreleased]: https://github.com/binbashar/public-docker-images/compare/v0.0.15...HEAD
+[v0.0.15]: https://github.com/binbashar/public-docker-images/compare/v0.0.14...v0.0.15
 [v0.0.14]: https://github.com/binbashar/public-docker-images/compare/v0.0.13...v0.0.14
 [v0.0.13]: https://github.com/binbashar/public-docker-images/compare/v0.0.12...v0.0.13
 [v0.0.12]: https://github.com/binbashar/public-docker-images/compare/v0.0.11...v0.0.12
