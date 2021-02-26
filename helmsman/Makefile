@@ -33,6 +33,9 @@ get-all-versions: ## Get helmsman, helm and aws-iam-authenticator version
 	docker run -it --rm \
 		--entrypoint aws-iam-authenticator \
 		${DOCKER_ORG}/${DOCKER_IMG_NAME}:${DOCKER_TAG} version
+	docker run -it --rm \
+		--entrypoint eyaml \
+		${DOCKER_ORG}/${DOCKER_IMG_NAME}:${DOCKER_TAG} version
 
 test: get-all-versions ## ci docker image tests
 
