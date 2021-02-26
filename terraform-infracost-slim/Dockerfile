@@ -5,7 +5,7 @@ FROM hashicorp/terraform:${TERRAFORM_VERSION}
 
 LABEL vendor="Binbash Leverage (info@binbash.com.ar)"
 
-ARG INFRACOST_VERSION="v0.7.14"
+ARG INFRACOST_VERSION="v0.7.20"
 
 # Install python3 and other useful dependencies
 RUN apk update
