@@ -11,7 +11,7 @@ ENV PY_PIP_PKGS="ansible==${ANSIBLE_VERSION} yamllint ansible-lint flake8 molecu
 # Installing dependencies
 #
 RUN apt-get update \
-  && apt-get install -y git \
+  && apt-get install -y git unzip \
 	&& apt-get clean
 
 # Install Ansible via Pip.
