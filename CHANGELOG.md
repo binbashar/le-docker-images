@@ -7,6 +7,12 @@ All notable changes to this project will be documented in this file.
 
 
 
+<a name="v0.0.16"></a>
+## [v0.0.16] - 2021-03-02
+
+- Add unzip to Ansible docker images ([#12](https://github.com/binbashar/public-docker-images/issues/12))
+
+
 <a name="v0.0.15"></a>
 ## [v0.0.15] - 2021-02-26
 
@@ -114,7 +120,8 @@ All notable changes to this project will be documented in this file.
 - BBL-313 | le-docker-images initial commit
 
 
-[Unreleased]: https://github.com/binbashar/public-docker-images/compare/v0.0.15...HEAD
+[Unreleased]: https://github.com/binbashar/public-docker-images/compare/v0.0.16...HEAD
+[v0.0.16]: https://github.com/binbashar/public-docker-images/compare/v0.0.15...v0.0.16
 [v0.0.15]: https://github.com/binbashar/public-docker-images/compare/v0.0.14...v0.0.15
 [v0.0.14]: https://github.com/binbashar/public-docker-images/compare/v0.0.13...v0.0.14
 [v0.0.13]: https://github.com/binbashar/public-docker-images/compare/v0.0.12...v0.0.13
