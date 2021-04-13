@@ -7,6 +7,12 @@ All notable changes to this project will be documented in this file.
 
 
 
+<a name="v0.0.18"></a>
+## [v0.0.18] - 2021-04-13
+
+- Update Terraform slim images to use v0.14.10 ([#17](https://github.com/binbashar/public-docker-images/issues/17))
+
+
 <a name="v0.0.17"></a>
 ## [v0.0.17] - 2021-04-08
 
@@ -126,7 +132,8 @@ All notable changes to this project will be documented in this file.
 - BBL-313 | le-docker-images initial commit
 
 
-[Unreleased]: https://github.com/binbashar/public-docker-images/compare/v0.0.17...HEAD
+[Unreleased]: https://github.com/binbashar/public-docker-images/compare/v0.0.18...HEAD
+[v0.0.18]: https://github.com/binbashar/public-docker-images/compare/v0.0.17...v0.0.18
 [v0.0.17]: https://github.com/binbashar/public-docker-images/compare/v0.0.16...v0.0.17
 [v0.0.16]: https://github.com/binbashar/public-docker-images/compare/v0.0.15...v0.0.16
 [v0.0.15]: https://github.com/binbashar/public-docker-images/compare/v0.0.14...v0.0.15
