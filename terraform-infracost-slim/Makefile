@@ -2,7 +2,7 @@
 SHELL            := /bin/bash
 MAKEFILES_DIR    := ../@bin/makefiles
 
-DOCKER_TAG       := 0.14.4
+DOCKER_TAG       := 0.15.2
 DOCKER_REPO_NAME := binbash
 DOCKER_IMG_NAME  := terraform-infracost-slim
 
