@@ -7,6 +7,16 @@ All notable changes to this project will be documented in this file.
 
 
 
+<a name="v0.0.19"></a>
+## [v0.0.19] - 2021-05-11
+
+- BBL-192 | uprading docker image helm + helmsman version
+- BBL-192 | uprading docker images terraform and awscli versions
+- BBL-192 | uprading docker image ansible version
+- BBL-192 | Removing legacy terraform docker images from makefile
+- BBL-192 | Removing legacy terraform docker images
+
+
 <a name="v0.0.18"></a>
 ## [v0.0.18] - 2021-04-13
 
@@ -132,7 +142,8 @@ All notable changes to this project will be documented in this file.
 - BBL-313 | le-docker-images initial commit
 
 
-[Unreleased]: https://github.com/binbashar/public-docker-images/compare/v0.0.18...HEAD
+[Unreleased]: https://github.com/binbashar/public-docker-images/compare/v0.0.19...HEAD
+[v0.0.19]: https://github.com/binbashar/public-docker-images/compare/v0.0.18...v0.0.19
 [v0.0.18]: https://github.com/binbashar/public-docker-images/compare/v0.0.17...v0.0.18
 [v0.0.17]: https://github.com/binbashar/public-docker-images/compare/v0.0.16...v0.0.17
 [v0.0.16]: https://github.com/binbashar/public-docker-images/compare/v0.0.15...v0.0.16
