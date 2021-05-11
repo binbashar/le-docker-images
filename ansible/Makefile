@@ -2,7 +2,7 @@
 SHELL            := /bin/bash
 MAKEFILES_DIR    := ../@bin/makefiles
 
-DOCKER_TAG       := 2.10.3
+DOCKER_TAG       := 2.10.7
 DOCKER_REPO_NAME := binbash
 DOCKER_IMG_NAME  := ansible
 
