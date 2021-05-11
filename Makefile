@@ -8,10 +8,8 @@ define DOCKER_IMG_LIST
 "ansible" \
 "ansible-dev" \
 "git-release" \
-"terraform-awscli" \
 "terraform-awscli-slim" \
 "terraform-awscli-terratest-slim" \
-"terraform-resources" \
 "helmsman"
 endef
 
