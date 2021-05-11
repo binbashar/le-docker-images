@@ -4,8 +4,7 @@ MAKEFILES_DIR    := ../@bin/makefiles
 
 DOCKER_ORG 		:= binbash
 DOCKER_IMG_NAME := helmsman
-DOCKER_TAG 		:= v3.4.3-helm-v3.2.1
-
+DOCKER_TAG 		:= v3.6.8-helm-v3.4.2
 BASE_HELMSMAN_IMAGE	:= praqma/helmsman:${DOCKER_TAG}
 
 
