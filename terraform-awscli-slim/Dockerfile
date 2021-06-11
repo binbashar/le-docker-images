@@ -34,4 +34,8 @@ RUN curl -LO https://dl.k8s.io/release/${KUBECTL_VERSION}/bin/linux/amd64/kubect
         chmod +x kubectl && \
         mv kubectl /usr/local/bin
 
+# Add aws-mfa script
+RUN mkdir -p /root/scripts/aws-mfa && \
+        curl https://raw.githubusercontent.com/binbashar/le-tf-infra-aws-template/master/le-resources/scripts/aws-mfa/aws-mfa-entrypoint.sh > /root/scripts/aws-mfa/aws-mfa-entrypoint.sh
+
 ENTRYPOINT ["terraform"]
