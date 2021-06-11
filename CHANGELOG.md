@@ -7,8 +7,19 @@ All notable changes to this project will be documented in this file.
 
 
 
+<a name="v0.1.1"></a>
+## [v0.1.1] - 2021-06-11
+
+- Add mfa script to terrafrom-awscli image
+
+
 <a name="v0.0.20"></a>
 ## [v0.0.20] - 2021-05-27
+
+
+
+<a name="v0.1.0"></a>
+## [v0.1.0] - 2021-05-27
 
 - Add kubectl to terraform image ([#26](https://github.com/binbashar/public-docker-images/issues/26))
 
@@ -148,8 +159,10 @@ All notable changes to this project will be documented in this file.
 - BBL-313 | le-docker-images initial commit
 
 
-[Unreleased]: https://github.com/binbashar/public-docker-images/compare/v0.0.20...HEAD
-[v0.0.20]: https://github.com/binbashar/public-docker-images/compare/v0.0.19...v0.0.20
+[Unreleased]: https://github.com/binbashar/public-docker-images/compare/v0.1.1...HEAD
+[v0.1.1]: https://github.com/binbashar/public-docker-images/compare/v0.0.20...v0.1.1
+[v0.0.20]: https://github.com/binbashar/public-docker-images/compare/v0.1.0...v0.0.20
+[v0.1.0]: https://github.com/binbashar/public-docker-images/compare/v0.0.19...v0.1.0
 [v0.0.19]: https://github.com/binbashar/public-docker-images/compare/v0.0.18...v0.0.19
 [v0.0.18]: https://github.com/binbashar/public-docker-images/compare/v0.0.17...v0.0.18
 [v0.0.17]: https://github.com/binbashar/public-docker-images/compare/v0.0.16...v0.0.17
