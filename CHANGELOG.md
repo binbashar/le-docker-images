@@ -7,6 +7,13 @@ All notable changes to this project will be documented in this file.
 
 
 
+<a name="v0.1.2"></a>
+## [v0.1.2] - 2021-06-16
+
+- Bump image tag
+- Give MFA script permission for execution
+
+
 <a name="v0.1.1"></a>
 ## [v0.1.1] - 2021-06-11
 
@@ -159,7 +166,8 @@ All notable changes to this project will be documented in this file.
 - BBL-313 | le-docker-images initial commit
 
 
-[Unreleased]: https://github.com/binbashar/public-docker-images/compare/v0.1.1...HEAD
+[Unreleased]: https://github.com/binbashar/public-docker-images/compare/v0.1.2...HEAD
+[v0.1.2]: https://github.com/binbashar/public-docker-images/compare/v0.1.1...v0.1.2
 [v0.1.1]: https://github.com/binbashar/public-docker-images/compare/v0.0.20...v0.1.1
 [v0.0.20]: https://github.com/binbashar/public-docker-images/compare/v0.1.0...v0.0.20
 [v0.1.0]: https://github.com/binbashar/public-docker-images/compare/v0.0.19...v0.1.0
