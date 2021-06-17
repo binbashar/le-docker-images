@@ -6,7 +6,7 @@ FROM hashicorp/terraform:${TERRAFORM_VERSION}
 LABEL vendor="Binbash Leverage (info@binbash.com.ar)"
 
 ARG AWSCLI_VERSION=1.19.67
-ARG KUBECTL_VERSION=v1.21.0
+ARG AWSVAULT_VERSION=v6.3.1
 
 # Install python3 and other useful dependencies
 RUN apk update
@@ -30,12 +30,13 @@ RUN python3 -m ensurepip && \
         rm -r /usr/lib/python*/ensurepip && \
         pip3 install awscli==${AWSCLI_VERSION}
 
-RUN curl -LO https://dl.k8s.io/release/${KUBECTL_VERSION}/bin/linux/amd64/kubectl && \
-        chmod +x kubectl && \
-        mv kubectl /usr/local/bin
-
 # Add aws-mfa script
 RUN mkdir -p /root/scripts/aws-mfa && \
         curl https://raw.githubusercontent.com/binbashar/le-tf-infra-aws-template/master/le-resources/scripts/aws-mfa/aws-mfa-entrypoint.sh > /root/scripts/aws-mfa/aws-mfa-entrypoint.sh
+
+# Add aws-vault
+RUN curl -LO https://github.com/99designs/aws-vault/releases/download/${AWSVAULT_VERSION}/aws-vault-linux-amd64 \
+        && chmod +x aws-vault-linux-amd64 \
+        && mv aws-vault-linux-amd64 /usr/local/bin/aws-vault
 
 ENTRYPOINT ["terraform"]
