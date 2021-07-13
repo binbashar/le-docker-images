@@ -7,6 +7,13 @@ All notable changes to this project will be documented in this file.
 
 
 
+<a name="v0.1.4"></a>
+## [v0.1.4] - 2021-07-13
+
+- Merge branch 'master' into feature/new-tf-ver
+- BBL-192 | terraform docker image updated to lastes 0.15.x version
+
+
 <a name="v0.1.3"></a>
 ## [v0.1.3] - 2021-06-17
 
@@ -172,7 +179,8 @@ All notable changes to this project will be documented in this file.
 - BBL-313 | le-docker-images initial commit
 
 
-[Unreleased]: https://github.com/binbashar/public-docker-images/compare/v0.1.3...HEAD
+[Unreleased]: https://github.com/binbashar/public-docker-images/compare/v0.1.4...HEAD
+[v0.1.4]: https://github.com/binbashar/public-docker-images/compare/v0.1.3...v0.1.4
 [v0.1.3]: https://github.com/binbashar/public-docker-images/compare/v0.1.2...v0.1.3
 [v0.1.2]: https://github.com/binbashar/public-docker-images/compare/v0.1.1...v0.1.2
 [v0.1.1]: https://github.com/binbashar/public-docker-images/compare/v0.0.20...v0.1.1
