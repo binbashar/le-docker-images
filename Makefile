@@ -8,6 +8,7 @@ define DOCKER_IMG_LIST
 "ansible" \
 "ansible-dev" \
 "git-release" \
+"leverage-cli-testing" \
 "terraform-awscli-slim" \
 "terraform-awscli-terratest-slim" \
 "helmsman"
