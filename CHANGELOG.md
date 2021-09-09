@@ -7,6 +7,12 @@ All notable changes to this project will be documented in this file.
 
 
 
+<a name="v0.1.5"></a>
+## [v0.1.5] - 2021-09-09
+
+- Add leverage-cli-testing image
+
+
 <a name="v0.1.4"></a>
 ## [v0.1.4] - 2021-07-13
 
@@ -179,7 +185,8 @@ All notable changes to this project will be documented in this file.
 - BBL-313 | le-docker-images initial commit
 
 
-[Unreleased]: https://github.com/binbashar/public-docker-images/compare/v0.1.4...HEAD
+[Unreleased]: https://github.com/binbashar/public-docker-images/compare/v0.1.5...HEAD
+[v0.1.5]: https://github.com/binbashar/public-docker-images/compare/v0.1.4...v0.1.5
 [v0.1.4]: https://github.com/binbashar/public-docker-images/compare/v0.1.3...v0.1.4
 [v0.1.3]: https://github.com/binbashar/public-docker-images/compare/v0.1.2...v0.1.3
 [v0.1.2]: https://github.com/binbashar/public-docker-images/compare/v0.1.1...v0.1.2
