@@ -2,7 +2,7 @@
 SHELL			 := /bin/bash
 MAKEFILES_DIR	 := ../@bin/makefiles
 
-DOCKER_TAG		 := 1.0.0
+DOCKER_TAG		 := 2.0.0
 DOCKER_REPO_NAME := binbash
 DOCKER_IMG_NAME  := leverage-cli-testing
 
