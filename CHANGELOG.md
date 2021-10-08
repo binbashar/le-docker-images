@@ -7,6 +7,12 @@ All notable changes to this project will be documented in this file.
 
 
 
+<a name="v0.1.7"></a>
+## [v0.1.7] - 2021-10-08
+
+- Create FUNDING.yml
+
+
 <a name="v0.1.6"></a>
 ## [v0.1.6] - 2021-09-20
 
@@ -193,7 +199,8 @@ All notable changes to this project will be documented in this file.
 - BBL-313 | le-docker-images initial commit
 
 
-[Unreleased]: https://github.com/binbashar/public-docker-images/compare/v0.1.6...HEAD
+[Unreleased]: https://github.com/binbashar/public-docker-images/compare/v0.1.7...HEAD
+[v0.1.7]: https://github.com/binbashar/public-docker-images/compare/v0.1.6...v0.1.7
 [v0.1.6]: https://github.com/binbashar/public-docker-images/compare/v0.1.5...v0.1.6
 [v0.1.5]: https://github.com/binbashar/public-docker-images/compare/v0.1.4...v0.1.5
 [v0.1.4]: https://github.com/binbashar/public-docker-images/compare/v0.1.3...v0.1.4
