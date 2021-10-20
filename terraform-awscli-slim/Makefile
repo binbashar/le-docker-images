@@ -2,7 +2,7 @@
 SHELL            := /bin/bash
 MAKEFILES_DIR    := ../@bin/makefiles
 
-DOCKER_TAG       := 0.15.5
+DOCKER_TAG       := 1.0.9
 DOCKER_REPO_NAME := binbash
 DOCKER_IMG_NAME  := terraform-awscli-slim
 
