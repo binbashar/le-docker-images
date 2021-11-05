@@ -7,6 +7,12 @@ All notable changes to this project will be documented in this file.
 
 
 
+<a name="v0.1.9"></a>
+## [v0.1.9] - 2021-11-05
+
+- Pin MFA script version
+
+
 <a name="v0.1.8"></a>
 ## [v0.1.8] - 2021-10-20
 
@@ -205,7 +211,8 @@ All notable changes to this project will be documented in this file.
 - BBL-313 | le-docker-images initial commit
 
 
-[Unreleased]: https://github.com/binbashar/public-docker-images/compare/v0.1.8...HEAD
+[Unreleased]: https://github.com/binbashar/public-docker-images/compare/v0.1.9...HEAD
+[v0.1.9]: https://github.com/binbashar/public-docker-images/compare/v0.1.8...v0.1.9
 [v0.1.8]: https://github.com/binbashar/public-docker-images/compare/v0.1.7...v0.1.8
 [v0.1.7]: https://github.com/binbashar/public-docker-images/compare/v0.1.6...v0.1.7
 [v0.1.6]: https://github.com/binbashar/public-docker-images/compare/v0.1.5...v0.1.6
