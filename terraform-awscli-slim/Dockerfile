@@ -32,7 +32,7 @@ RUN python3 -m ensurepip && \
 
 # Add aws-mfa script
 RUN mkdir -p /root/scripts/aws-mfa && \
-        curl https://raw.githubusercontent.com/binbashar/le-tf-infra-aws-template/master/le-resources/scripts/aws-mfa/aws-mfa-entrypoint.sh > /root/scripts/aws-mfa/aws-mfa-entrypoint.sh
+        curl https://raw.githubusercontent.com/binbashar/le-tf-infra-aws-template/v0.2.1/le-resources/scripts/aws-mfa/aws-mfa-entrypoint.sh > /root/scripts/aws-mfa/aws-mfa-entrypoint.sh
 RUN chmod +x /root/scripts/aws-mfa/aws-mfa-entrypoint.sh
 
 # Add aws-vault
