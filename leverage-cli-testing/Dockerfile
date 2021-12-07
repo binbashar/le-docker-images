@@ -18,7 +18,7 @@ RUN touch /root/.gitconfig
 
 WORKDIR /leverage
 # Install requirements for running unit tests
-RUN curl -LO https://raw.githubusercontent.com/binbashar/leverage/v1.3.0/dev-requirements.txt
+RUN curl -LO https://raw.githubusercontent.com/binbashar/leverage/v1.2.0/dev-requirements.txt
 RUN pip install -r dev-requirements.txt
 
 # Make script to configure and start docker daemon the default entrypoint
