@@ -32,6 +32,7 @@ jobs:
       - run:
           name: Build docker images
           command: make build-all
+          no_output_timeout: 30m
 
       - run:
           name: Run docker images tests
@@ -68,6 +69,7 @@ jobs:
       - run:
           name: Build && Push docker images
           command: make build-all && make push-all
+          no_output_timeout: 30m
 
   #
   # Release
