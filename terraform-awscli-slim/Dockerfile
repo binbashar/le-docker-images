@@ -8,6 +8,8 @@ LABEL vendor="Binbash Leverage (info@binbash.com.ar)"
 ARG AWSCLI_VERSION=1.19.67
 ARG AWSVAULT_VERSION=v6.3.1
 
+ARG HCLEDIT_VERSION=0.2.2
+
 # Install python3 and other useful dependencies
 RUN apk update
 RUN set -ex && \
@@ -39,5 +41,9 @@ RUN chmod +x /root/scripts/aws-mfa/aws-mfa-entrypoint.sh
 RUN curl -LO https://github.com/99designs/aws-vault/releases/download/${AWSVAULT_VERSION}/aws-vault-linux-amd64 \
         && chmod +x aws-vault-linux-amd64 \
         && mv aws-vault-linux-amd64 /usr/local/bin/aws-vault
+
+# Install hcledit
+RUN curl -LO https://github.com/minamijoyo/hcledit/releases/download/v${HCLEDIT_VERSION}/hcledit_${HCLEDIT_VERSION}_linux_amd64.tar.gz \
+        && tar -xzf hcledit_${HCLEDIT_VERSION}_linux_amd64.tar.gz hcledit -C /usr/local/bin
 
 ENTRYPOINT ["terraform"]
