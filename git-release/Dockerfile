@@ -1,4 +1,4 @@
-FROM golang:1.14.9-stretch
+FROM golang:1.18beta1-stretch
 
 MAINTAINER Binbash Leverage (info@binbash.com.ar)
 
