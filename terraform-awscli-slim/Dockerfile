@@ -9,6 +9,7 @@ ARG GLIBC_VERSION=2.34-r0
 ARG AWSCLI_VERSION=2.4.7
 ARG AWSVAULT_VERSION=v6.3.1
 ARG HCLEDIT_VERSION=0.2.2
+ARG TEMPLATE_VERSION=0.3.1
 
 # Install python3 and other useful dependencies
 RUN apk update
@@ -45,9 +46,16 @@ RUN curl https://awscli.amazonaws.com/awscli-exe-linux-x86_64-${AWSCLI_VERSION}.
         && rm -rf awscliv2.zip aws
 
 # Add aws-mfa script
-RUN mkdir -p /root/scripts/aws-mfa && \
-        curl https://raw.githubusercontent.com/binbashar/le-tf-infra-aws-template/v0.2.1/le-resources/scripts/aws-mfa/aws-mfa-entrypoint.sh > /root/scripts/aws-mfa/aws-mfa-entrypoint.sh
-RUN chmod +x /root/scripts/aws-mfa/aws-mfa-entrypoint.sh
+RUN mkdir -p /root/scripts/aws-mfa
+RUN curl https://raw.githubusercontent.com/binbashar/le-tf-infra-aws-template/v${TEMPLATE_VERSION}/le-resources/scripts/aws-mfa/aws-mfa-entrypoint.sh > /root/scripts/aws-mfa/aws-mfa-entrypoint.sh
+# Add aws-sso scripts
+RUN mkdir -p /root/scripts/aws-sso
+RUN curl https://raw.githubusercontent.com/binbashar/le-tf-infra-aws-template/v${TEMPLATE_VERSION}/le-resources/scripts/aws-sso/aws-sso-config.sh > /root/scripts/aws-sso/aws-sso-config.sh 
+RUN curl https://raw.githubusercontent.com/binbashar/le-tf-infra-aws-template/v${TEMPLATE_VERSION}/le-resources/scripts/aws-sso/aws-sso-login.sh > /root/scripts/aws-sso/aws-sso-login.sh 
+RUN curl https://raw.githubusercontent.com/binbashar/le-tf-infra-aws-template/v${TEMPLATE_VERSION}/le-resources/scripts/aws-sso/aws-sso-logout.sh > /root/scripts/aws-sso/aws-sso-logout.sh 
+RUN curl https://raw.githubusercontent.com/binbashar/le-tf-infra-aws-template/v${TEMPLATE_VERSION}/le-resources/scripts/aws-sso/aws-sso-entrypoint.sh > /root/scripts/aws-sso/aws-sso-entrypoint.sh 
+
+RUN chmod -R +x /root/scripts/
 
 # Add aws-vault
 RUN curl -LO https://github.com/99designs/aws-vault/releases/download/${AWSVAULT_VERSION}/aws-vault-linux-amd64 \
