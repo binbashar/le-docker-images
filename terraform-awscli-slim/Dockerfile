@@ -47,13 +47,13 @@ RUN curl https://awscli.amazonaws.com/awscli-exe-linux-x86_64-${AWSCLI_VERSION}.
 
 # Add aws-mfa script
 RUN mkdir -p /root/scripts/aws-mfa
-RUN curl https://raw.githubusercontent.com/binbashar/le-tf-infra-aws-template/v${TEMPLATE_VERSION}/le-resources/scripts/aws-mfa/aws-mfa-entrypoint.sh > /root/scripts/aws-mfa/aws-mfa-entrypoint.sh
+RUN curl -v https://raw.githubusercontent.com/binbashar/le-tf-infra-aws-template/v${TEMPLATE_VERSION}/le-resources/scripts/aws-mfa/aws-mfa-entrypoint.sh > /root/scripts/aws-mfa/aws-mfa-entrypoint.sh
 # Add aws-sso scripts
 RUN mkdir -p /root/scripts/aws-sso
-RUN curl https://raw.githubusercontent.com/binbashar/le-tf-infra-aws-template/v${TEMPLATE_VERSION}/le-resources/scripts/aws-sso/aws-sso-config.sh > /root/scripts/aws-sso/aws-sso-config.sh 
-RUN curl https://raw.githubusercontent.com/binbashar/le-tf-infra-aws-template/v${TEMPLATE_VERSION}/le-resources/scripts/aws-sso/aws-sso-login.sh > /root/scripts/aws-sso/aws-sso-login.sh 
-RUN curl https://raw.githubusercontent.com/binbashar/le-tf-infra-aws-template/v${TEMPLATE_VERSION}/le-resources/scripts/aws-sso/aws-sso-logout.sh > /root/scripts/aws-sso/aws-sso-logout.sh 
-RUN curl https://raw.githubusercontent.com/binbashar/le-tf-infra-aws-template/v${TEMPLATE_VERSION}/le-resources/scripts/aws-sso/aws-sso-entrypoint.sh > /root/scripts/aws-sso/aws-sso-entrypoint.sh 
+RUN curl -v https://raw.githubusercontent.com/binbashar/le-tf-infra-aws-template/v${TEMPLATE_VERSION}/le-resources/scripts/aws-sso/aws-sso-config.sh > /root/scripts/aws-sso/aws-sso-config.sh 
+RUN curl -v https://raw.githubusercontent.com/binbashar/le-tf-infra-aws-template/v${TEMPLATE_VERSION}/le-resources/scripts/aws-sso/aws-sso-login.sh > /root/scripts/aws-sso/aws-sso-login.sh 
+RUN curl -v https://raw.githubusercontent.com/binbashar/le-tf-infra-aws-template/v${TEMPLATE_VERSION}/le-resources/scripts/aws-sso/aws-sso-logout.sh > /root/scripts/aws-sso/aws-sso-logout.sh 
+RUN curl -v https://raw.githubusercontent.com/binbashar/le-tf-infra-aws-template/v${TEMPLATE_VERSION}/le-resources/scripts/aws-sso/aws-sso-entrypoint.sh > /root/scripts/aws-sso/aws-sso-entrypoint.sh 
 
 RUN chmod -R +x /root/scripts/
 
