@@ -7,6 +7,12 @@ All notable changes to this project will be documented in this file.
 
 
 
+<a name="v0.1.15"></a>
+## [v0.1.15] - 2022-03-23
+
+- Fix | Fix Dockerfile urls and sourround them in quotes ([#81](https://github.com/binbashar/public-docker-images/issues/81))
+
+
 <a name="v0.1.14"></a>
 ## [v0.1.14] - 2022-03-14
 
@@ -247,7 +253,8 @@ All notable changes to this project will be documented in this file.
 - BBL-313 | le-docker-images initial commit
 
 
-[Unreleased]: https://github.com/binbashar/public-docker-images/compare/v0.1.14...HEAD
+[Unreleased]: https://github.com/binbashar/public-docker-images/compare/v0.1.15...HEAD
+[v0.1.15]: https://github.com/binbashar/public-docker-images/compare/v0.1.14...v0.1.15
 [v0.1.14]: https://github.com/binbashar/public-docker-images/compare/v0.1.13...v0.1.14
 [v0.1.13]: https://github.com/binbashar/public-docker-images/compare/v0.1.12...v0.1.13
 [v0.1.12]: https://github.com/binbashar/public-docker-images/compare/v0.1.11...v0.1.12
