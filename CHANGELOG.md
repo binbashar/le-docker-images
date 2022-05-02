@@ -7,6 +7,12 @@ All notable changes to this project will be documented in this file.
 
 
 
+<a name="v0.1.16"></a>
+## [v0.1.16] - 2022-05-02
+
+- Fix | Remove dep package instalation from Terratest image ([#88](https://github.com/binbashar/public-docker-images/issues/88))
+
+
 <a name="v0.1.15"></a>
 ## [v0.1.15] - 2022-03-23
 
@@ -253,7 +259,8 @@ All notable changes to this project will be documented in this file.
 - BBL-313 | le-docker-images initial commit
 
 
-[Unreleased]: https://github.com/binbashar/public-docker-images/compare/v0.1.15...HEAD
+[Unreleased]: https://github.com/binbashar/public-docker-images/compare/v0.1.16...HEAD
+[v0.1.16]: https://github.com/binbashar/public-docker-images/compare/v0.1.15...v0.1.16
 [v0.1.15]: https://github.com/binbashar/public-docker-images/compare/v0.1.14...v0.1.15
 [v0.1.14]: https://github.com/binbashar/public-docker-images/compare/v0.1.13...v0.1.14
 [v0.1.13]: https://github.com/binbashar/public-docker-images/compare/v0.1.12...v0.1.13
