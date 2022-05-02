@@ -19,9 +19,8 @@ ENV PATH /go/bin:$PATH
 
 RUN mkdir -p ${GOPATH}/src ${GOPATH}/bin
 
-RUN go env -w GO111MODULE=off
+RUN go env -w GO111MODULE=on
 RUN go get github.com/gruntwork-io/terratest/modules/terraform
-RUN go get -u github.com/golang/dep/cmd/dep
 
 WORKDIR $GOPATH
 
