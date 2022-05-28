@@ -2,7 +2,7 @@
 SHELL         := /bin/bash
 MAKEFILE_PATH := ./Makefile
 MAKEFILES_DIR := ./@bin/makefiles
-MAKEFILES_VER := v0.1.38
+MAKEFILES_VER := v0.2.4
 
 define DOCKER_IMG_LIST
 "ansible" \
