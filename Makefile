@@ -2,7 +2,7 @@
 SHELL         := /bin/bash
 MAKEFILE_PATH := ./Makefile
 MAKEFILES_DIR := ./@bin/makefiles
-MAKEFILES_VER := v0.2.4
+MAKEFILES_VER := v0.2.12
 
 define DOCKER_IMG_LIST
 "ansible" \
@@ -11,7 +11,8 @@ define DOCKER_IMG_LIST
 "leverage-cli-testing" \
 "terraform-awscli-slim" \
 "terraform-awscli-terratest-slim" \
-"helmsman"
+"helmsman" \
+"kaniko"
 endef
 
 help:
