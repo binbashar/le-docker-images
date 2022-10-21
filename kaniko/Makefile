@@ -5,7 +5,7 @@ DOCKER_TAG       := ${KANIKO_VERSION}
 DOCKER_REPO_NAME := binbash
 DOCKER_IMG_NAME  := kaniko
 MAKEFILES_DIR    := ../@bin/makefiles
-TARGET_PLATFORMS := 'linux/amd64'
+TARGET_PLATFORMS := 'linux/amd64,linux/arm64,linux/arm/v6,linux/arm/v7,linux/arm/v8'
 ADDITIONAL_TAGS  := "latest"
 ADDITIONAL_DOCKER_ARGS := "KANIKO_VERSION='${KANIKO_VERSION}'"
 
