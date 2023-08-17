@@ -7,6 +7,12 @@ All notable changes to this project will be documented in this file.
 
 
 
+<a name="v0.1.19"></a>
+## [v0.1.19] - 2023-08-17
+
+- Ansible 8.3.0 ([#96](https://github.com/binbashar/public-docker-images/issues/96))
+
+
 <a name="v0.1.18"></a>
 ## [v0.1.18] - 2022-10-20
 
@@ -275,7 +281,8 @@ All notable changes to this project will be documented in this file.
 - BBL-313 | le-docker-images initial commit
 
 
-[Unreleased]: https://github.com/binbashar/public-docker-images/compare/v0.1.18...HEAD
+[Unreleased]: https://github.com/binbashar/public-docker-images/compare/v0.1.19...HEAD
+[v0.1.19]: https://github.com/binbashar/public-docker-images/compare/v0.1.18...v0.1.19
 [v0.1.18]: https://github.com/binbashar/public-docker-images/compare/v0.1.17...v0.1.18
 [v0.1.17]: https://github.com/binbashar/public-docker-images/compare/v0.1.16...v0.1.17
 [v0.1.16]: https://github.com/binbashar/public-docker-images/compare/v0.1.15...v0.1.16
