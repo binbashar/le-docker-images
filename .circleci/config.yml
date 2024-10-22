@@ -6,11 +6,7 @@ jobs:
   #
   build-and-test:
     machine:
-<<<<<<< HEAD
       image: ubuntu-2204:edge
-=======
-      image: ubuntu-2004:202201-02 # Ubuntu 16.04, Docker v19.03.12, Docker Compose v1.26.1
->>>>>>> 09da70619906e2287dc70c1a0756693908cc9b0b
 
       # This job has been blocked because Docker Layer Caching is not available on your plan.
       # Should upgrade if necessary.
@@ -47,11 +43,7 @@ jobs:
   #
   push-images:
     machine:
-<<<<<<< HEAD
       image: ubuntu-2204:edge
-=======
-      image: ubuntu-2004:202201-02 # Ubuntu 16.04, Docker v19.03.12, Docker Compose v1.26.1
->>>>>>> 09da70619906e2287dc70c1a0756693908cc9b0b
 
       # This job has been blocked because Docker Layer Caching is not available on your plan.
       # Should upgrade if necessary.
@@ -84,11 +76,7 @@ jobs:
   #
   release-version-with-changelog:
     machine:
-<<<<<<< HEAD
       image: ubuntu-2204:edge
-=======
-      image: ubuntu-2004:202201-02 # Ubuntu 16.04, Docker v19.03.12, Docker Compose v1.26.1
->>>>>>> 09da70619906e2287dc70c1a0756693908cc9b0b
 
       # This job has been blocked because Docker Layer Caching is not available on your plan.
       # Please upgrade to continue building.
