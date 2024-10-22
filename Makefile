@@ -11,7 +11,8 @@ define DOCKER_IMG_LIST
 "leverage-cli-testing" \
 "terraform-awscli-slim" \
 "terraform-awscli-terratest-slim" \
-"helmsman"
+"helmsman" \
+"kaniko"
 endef
 
 help:
