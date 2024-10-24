@@ -6,11 +6,16 @@ DOCKER_TAG       := 8.3.0
 DOCKER_REPO_NAME := binbash
 DOCKER_IMG_NAME  := ansible
 
+#
+# PLATFORMS
+#
+TARGET_PLATFORMS := 'linux/amd64,linux/arm64'
+
 help:
 	@echo 'Available Commands:'
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf " - \033[36m%-18s\033[0m %s\n", $$1, $$2}'
 
--include ${MAKEFILES_DIR}/docker/docker-hub-build-push-single-arg.mk
+-include ${MAKEFILES_DIR}/docker/docker-hub-build-push-single-arg-multi-arch.mk
 
 shell: ## interactive shell terminal
 	docker run -it --rm --entrypoint=bash \
