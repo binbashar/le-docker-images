@@ -7,6 +7,13 @@ All notable changes to this project will be documented in this file.
 
 
 
+<a name="v0.1.22"></a>
+## [v0.1.22] - 2024-10-25
+
+- Merge branch 'master' of github.com:binbashar/le-docker-images
+- commenting ssm plugin in ansible image
+
+
 <a name="v0.1.21"></a>
 ## [v0.1.21] - 2024-10-24
 
@@ -297,7 +304,8 @@ All notable changes to this project will be documented in this file.
 - BBL-313 | le-docker-images initial commit
 
 
-[Unreleased]: https://github.com/binbashar/public-docker-images/compare/v0.1.21...HEAD
+[Unreleased]: https://github.com/binbashar/public-docker-images/compare/v0.1.22...HEAD
+[v0.1.22]: https://github.com/binbashar/public-docker-images/compare/v0.1.21...v0.1.22
 [v0.1.21]: https://github.com/binbashar/public-docker-images/compare/v0.1.20...v0.1.21
 [v0.1.20]: https://github.com/binbashar/public-docker-images/compare/v0.1.19...v0.1.20
 [v0.1.19]: https://github.com/binbashar/public-docker-images/compare/v0.1.18...v0.1.19
