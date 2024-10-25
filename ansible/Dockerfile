@@ -20,9 +20,9 @@ RUN pip3 install wheel
 RUN pip3 install ${PY_PIP_PKGS}
 
 # Install SSM Session Manager Plugin
-RUN curl "https://s3.amazonaws.com/session-manager-downloads/plugin/latest/ubuntu_64bit/session-manager-plugin.deb" -o "session-manager-plugin.deb" && \
-    dpkg -i session-manager-plugin.deb && \
-    rm session-manager-plugin.deb
+#RUN curl "https://s3.amazonaws.com/session-manager-downloads/plugin/latest/ubuntu_64bit/session-manager-plugin.deb" -o "session-manager-plugin.deb" && \
+#    dpkg -i session-manager-plugin.deb && \
+#    rm session-manager-plugin.deb
 
 # Remove unnecessary getty and udev targets that result in high CPU usage when using
 # multiple containers with Molecule (https://github.com/ansible/molecule/issues/1104)
